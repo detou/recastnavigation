@@ -6,6 +6,9 @@ project(RecastNavigation)
 SET(SOVERSION 1)
 SET(VERSION 1.0.0)
 
+set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g3 -DDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
+
 option(RECASTNAVIGATION_DEMO "Build demo" ON)
 option(RECASTNAVIGATION_TESTS "Build tests" ON)
 option(RECASTNAVIGATION_EXAMPLES "Build examples" ON)
